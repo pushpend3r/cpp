@@ -4,6 +4,7 @@ using namespace std;
 typedef unsigned long long int ull;
 typedef long long int ll;
 
+// This is copied by GeeksforGeeks + some my modification
 int findMin(int arr[], int i, int sumCalculated, int sumTotal)
 {
   if (i == 0)
