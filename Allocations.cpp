@@ -6,7 +6,7 @@ using namespace std;
 typedef unsigned long long int ull;
 typedef long long int ll;
 
-ll t, b, n, arr[10000], ans;
+ll t, b, n, arr[100000], ans;
 
 int main(void)
 {
@@ -26,14 +26,13 @@ int main(void)
 
     for (ll x = 0; x < n; ++x)
     {
-      if (b - arr[x] < 0)
+      b -= arr[x];
+      ans++;
+
+      if (b < 0)
       {
+        ans--;
         break;
-      }
-      else
-      {
-        b -= arr[x];
-        ans++;
       }
     }
 
